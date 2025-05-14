@@ -1,0 +1,15 @@
+.textHome{
+    color: rgb(54, 41, 169);
+}
+.brdr{
+    width: 100%;
+    height: 1px;
+    background-color:rgb(140, 139, 139);
+    margin: 20px 0;
+
+
+}
+a{
+    text-decoration: none;
+    color: white;
+}
