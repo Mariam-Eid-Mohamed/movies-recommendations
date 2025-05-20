@@ -34,7 +34,7 @@ function SubmitHandler(e){
   setErrorsMessage(validate?.error?.details);
 
 else{
-    axios.post("https://cors-anywhere.herokuapp.com/http://hawas.runasp.net/api/v1/Register",formData).then((res)=>{console.log(res); 
+    axios.post("http://hawas.runasp.net/api/v1/Register",formData).then((res)=>{console.log(res); 
     navigate("/login");
   })
   .catch((err)=>{console.log(err);
