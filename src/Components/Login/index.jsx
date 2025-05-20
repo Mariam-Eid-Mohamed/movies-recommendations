@@ -33,7 +33,7 @@ function SubmitHandler(e){
   setErrorsMessage(validate?.error?.details);
 
 else{
-    axios.post("http://hawas.runasp.net/api/v1/Login",formData).then((res)=>{
+    axios.post("https://cors-anywhere.herokuapp.com/http://hawas.runasp.net/api/v1/Login",formData).then((res)=>{
       console.log(res.data.jwt)
       localStorage.setItem("Token_value",res.data.jwt) ;
       saveDataUser();
